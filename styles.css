@@ -1,0 +1,146 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #e3f2fd; /* Light blue background */
+    padding: 10px;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    width: 350px; /* Small app width */
+    margin: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow-x: auto;
+    display: block;
+}
+
+th, td {
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Ensure table responsiveness */
+.table-container {
+    overflow-x: auto; /* Allows scrolling if content is too wide */
+}
+
+/* Delete button */
+.delete-btn {
+    background: #dc3545;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Print button */
+.print-btn {
+    background-color: #28a745;
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    th, td {
+        padding: 4px;
+    }
+}
+
+/* Hide elements when printing */
+@media print {
+    .print-btn, .delete-btn {
+        display: none;
+    }
+}

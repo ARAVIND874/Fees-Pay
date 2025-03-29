@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Bill App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>A.V.V.M. Sri Pushpam College</h1>
+        
+        <div class="form-container">
+           
+            <form id="billForm">
+              <label for="registerNo">Register Number:</label>
+                <input type="text" id="registerNo" required>
+                  <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" required>
+                
+                <label for="department">Department:</label>
+                <select id="department" required>
+                    <option value=" B.A. in Economics">B.A. in Economics</option>
+                    <option value="B.A. in History">B.A. in History</option>
+                    <option value="B.A. in English">B.A. in English</option>
+                    <option value="B.A. in Indian Culture">B.A. in Indian Culture</option>
+                    <option value="B.A. in Tamil">B.A. in Tamil</option>
+                    <option value="B.Sc. in Computer Science">B.Sc. inComputer Science</option>
+                    <option value=" B.Sc. in Computer Science">B.Sc. in Computer Science</option>
+                    <option value="B.Sc. in Botany">B.Sc. in Botany</option>
+                    <option value="B.Sc. in Geography">B.Sc. in Geography</option>
+                    <option value="B.Sc. in Zoology">B.Sc. in Zoology</option>
+                    <option value="B.Sc. in Chemistry">B.Sc. in Chemistry</option>
+                    <option value="B.Sc. in Mathematics">B.Sc. in Mathematics</option>
+                    <option value="B.Sc. in Statistics">B.Sc. in Statistics</option>
+                    <option value="B.Sc. in Physics">B.Sc. in Physics</option>
+<option value="B.B.A. Bachelor of Business Administration
+">B.B.A. Bachelor of Business Administration</option>
+             <option value="B.C.A. Bachelor of Computer Application "> B.C.A. Bachelor of Computer Application</option>
+             <option value="B.Com.Bachelor of Commerce ">B.Com. Bachelor of Commerce </option>
+             <option value="B.Litt. in Tamil">B.Litt. in Tamil</option>
+             <option value="M.Sc. in Botany">M.Sc. in Botany</option>
+             <option value="M.Sc. in Mathematics">M.Sc. in Mathematics</option>
+             <option value="M.Sc. in Chemistry">M.Sc. in Chemistry</option>
+             <option value="M.Sc. in Mathematics">M.Sc. in Mathematics</option>
+             <option value="M.Sc. in Information Technology">M.Sc. in Information Technology</option>
+             <option value="M.Sc. in Physics">M.Sc. in Physics</option>
+             <option value="M.Sc. in Biotechnology">M.Sc. in Biotechnology</option>
+ <option value="M.C.A. Master of Computer Applications">M.C.A. Master ofComputer Applications</option>
+<option value="M.B.A. Master of Business Administration  ">M.B.A. Master of Business Administration</option>
+                </select>
+
+                <label for="billType">Bill Type:</label>
+                <select id="billType">
+                    <option value="tuition">Tuition</option>
+                    <option value="bus">Bus</option>
+                </select>
+
+                <label for="billAmount">Amount:</label>
+                <input type="number" id="billAmount" required>
+
+                <label for="billDate">Date:</label>
+                <input type="date" id="billDate" required>
+
+                <button type="submit">Add Bill</button>
+            </form>
+        </div>
+
+        <div class="bills-container">
+            <h2>Registered Bills</h2>
+            <table id="billsTable">
+                <thead>
+                    <tr>
+                        <th>Register Number</th>
+                          <th>Student Name</th>
+                        <th>Department</th>
+                        <th>Bill Type</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Last Updated</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bills will be added dynamically -->
+                </tbody>
+            </table>
+            <button onclick="printBill()">Print Bill</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
